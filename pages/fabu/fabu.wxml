@@ -1,0 +1,40 @@
+<form catchsubmit="publish" >   
+<view class="view-contain-ti">
+    <text class="text-ti">商品名</text>
+    <input class="input1" name='name'></input>
+</view>
+<view class="view-contain-ti">
+    <text class="text-ti">价格</text>
+    <input class="input1" name='price' type="number"></input>
+</view>
+<view class="view-contain-ti">
+    <text class="text-ti">数量</text>
+    <input class="input1" name='num' type='number'></input>
+</view>
+
+<view class="view-contain-ti">
+    <text class="text-ti">商品描述(记得留下联系方式呦)</text>
+    <input class="input1" name='content'></input>
+</view>
+
+
+  <picker bindchange="bindPickerChange" value="{{array[index]}}" range="{{array}}" name="type">
+    <view class="picker">
+      商品类型：{{array[index]}}
+    </view>
+  </picker>
+   <!-- 图片区域 -->
+   <view class="imageRootAll">
+  <block wx:for="{{imgList}}" wx:key="index">
+    <view class="imgItem">
+      <image class="img" src='{{item}}' mode='aspectFill'></image>
+      <image class="closeImg" bindtap="DeleteImg" src="/image/close.png" data-index="{{index}}"/>
+    </view>
+  </block>
+  <!-- 选择图片按钮 -->
+  <view wx:if="{{imgList.length<8}}" class="imgItem" bindtap="ChooseImage">
+    <image class="photo" src="/image/photo.png"></image>
+  </view>
+</view>
+<button type="primary" formType="submit" >发布商品</button>
+</form>

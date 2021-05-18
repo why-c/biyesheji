@@ -1,0 +1,85 @@
+page {
+  background: #ebebeb;
+}
+
+/* 搜索框 */
+.searchRoot {
+  background: rgb(255, 255, 255);
+  padding: 15rpx; /*内边框距离 */
+  display: flex;/*flex布局*/
+  flex-direction: row; 
+  
+}
+
+.searchInput {
+  flex: 1 1 auto;
+  height: 70rpx;
+  padding-left: 30rpx;
+  border: 1px solid rgb(3, 3, 3);
+  border-radius: 30rpx;
+  flex-direction: row;
+}
+
+.searchImg {
+  width: 70rpx;
+  height: 70rpx; 
+}
+/*列表  */
+
+
+.good_item {
+  display: flex;
+  align-items: center;
+  padding: 5rpx 0rpx;
+  background-color: #ffffff;
+  margin-top: 3rpx;
+}
+
+.cai_img {
+  width: 120rpx;
+  height: 120rpx;
+  line-height: 120rpx;
+  text-align: center;
+  margin-left: 10rpx;
+  margin-right: 30rpx;
+}
+
+.cai_root2 {
+  flex: 1;
+  min-width: 0
+}
+
+.cai_title {
+  font-weight: 400;
+  font-size: 38rpx;
+  width: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.cai_sell {
+  font-size: 30rpx;
+  color: gray;
+}
+
+/*价格*/
+
+.cai_price {
+  font-weight: bold;
+  font-size: 32rpx;
+  color: burlywood;
+}
+
+/*人民币符号*/
+
+.cai_price:before {
+  content: "￥";
+  font-size: 14px;
+}
+
+
+

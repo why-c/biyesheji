@@ -1,0 +1,28 @@
+
+  <picker bindchange="bindPickerChange" value="{{array1[index]}}" range="{{array1}}" name="type">
+    <view class="picker">
+      手机型号：{{array1[index1]}}
+    </view>
+  </picker>
+  <picker bindchange="bindPickerChange2" value="{{array2[index]}}" range="{{array2}}" name="cache">
+    <view class="picker">
+      内存容量：{{array2[index2]}}
+    </view>   
+  </picker> 
+   <picker bindchange="bindPickerChange3" value="{{array3[index]}}" range="{{array3}}" name="lastTime">
+    <view class="picker">
+      剩余保修：{{array3[index3]}}
+    </view>
+  </picker> 
+   <picker bindchange="bindPickerChange4" value="{{array4[index]}}" range="{{array4}}" name="phone">
+    <view class="picker">
+      机身外壳：{{array4[index4]}}
+    </view>
+  </picker>
+  <picker bindchange="bindPickerChange5" value="{{array5[index]}}" range="{{array5}}" name="phone">
+    <view class="picker">
+      使用时间：{{array5[index5]}}
+    </view>
+  </picker>
+  <view hidden="{{!isShowPrice}}">恭喜！您的估价为{{price}}</view>
+<button type="primary" bindtap="gujia" >开始估价</button>

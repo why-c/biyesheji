@@ -1,0 +1,6 @@
+<!--pages/address/address.wxml-->
+<text>请添加您的地址</text>
+<view class="searchRoot">
+	<input class="searchInput" bindconfirm='addAddress' confirm-type='search' bindinput="getSearchKey" placeholder="添加地址" />
+	<image class="searchImg" bindtap="goSearch" src="/image/address.jpg"></image>
+</view>

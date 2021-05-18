@@ -1,0 +1,154 @@
+/* 顶部轮播图 */
+swiper {
+  height: 380rpx;
+}
+
+/* 搜索框 */
+.searchRoot {
+  background: rgb(255, 255, 255);
+  padding: 15rpx; /*内边框距离 */
+  display: flex;/*flex布局*/
+  flex-direction: row; 
+  
+}
+
+.searchInput {
+  flex: 1 1 auto;
+  height: 70rpx;
+  padding-left: 30rpx;
+  border: 1px solid rgb(3, 3, 3);
+  border-radius: 30rpx;
+  flex-direction: row;
+}
+
+.searchImg {
+  width: 70rpx;
+  height: 70rpx; 
+}
+.cs_button {
+  background-color: wheat;
+  border: 0px;
+  position: fixed;
+  size: default;
+}
+
+.cs_button:after {
+  border: 0px;
+}
+.category_panel1 {
+  width: 100%;
+  display: flex;
+  color: #666;
+  flex-direction: column;
+  font-size: 11px;
+  justify-content: space-around;
+}
+.my_item {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 17px;
+  background: white;
+  border-bottom: 1px solid gainsboro;
+}
+.category-panel2 {
+  height: 90px;
+  width: 100%;
+  display: flex;
+  color: #666;
+  flex-direction: row;
+  font-size: 11px;
+  justify-content: space-around;
+}
+
+.category-item {
+  display: flex;
+  width: 60px;
+  text-align: center;
+  flex-direction: column;
+}
+
+.category-item-image {
+  width: 50px;
+  height: 50px;
+  overflow: unset;
+  padding: 15px 12px 0 6px;
+}
+
+.category-item-image1 {
+  width: 50px;
+  height: 45px;
+  overflow: unset;
+  padding: 15px 12px 0 6px;
+}
+
+.category-item-text {
+  margin-top: 11px;
+}
+
+.category-item-text1 {
+  margin-top: 0px;
+}
+
+.hot_tip {
+  font-size: 45rpx;
+  color: #f4c903;
+  margin: 25rpx 25rpx 15rpx 30rpx;
+}
+
+/*列表  */
+
+.good_item {
+  display: flex;
+  align-items: center;
+  margin: 5rpx 40rpx;
+  border-bottom: 1px gainsboro solid;
+  background-color: #ffffff;
+  margin-top: 3rpx;
+}
+.cai_img {
+  width: 140rpx;
+  height: 140rpx;
+  line-height: 140rpx;
+  text-align: center;
+  margin-left: 10rpx;
+  margin-right: 30rpx;
+}
+
+.cai_root2 {
+  flex: 1;
+  min-width: 0
+}
+
+.cai_title {
+  font-weight: 400;
+  font-size: 40rpx;
+  width: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.cai_sell {
+  font-size: 33rpx;
+  color: gray;
+}
+
+/*价格*/
+
+.cai_price {
+  font-weight: bold;
+  font-size: 32rpx;
+  color: burlywood;
+}
+
+/*人民币符号*/
+
+.cai_price:before {
+  content: "￥";
+  font-size: 14px;
+}

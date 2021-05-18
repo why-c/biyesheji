@@ -1,0 +1,20 @@
+/* pages/address/address.wxss */.searchRoot {
+  background: rgb(255, 255, 255);
+  padding: 15rpx; /*内边框距离 */
+  display: flex;/*flex布局*/
+  flex-direction: row; 
+  
+}
+
+.searchInput {
+  flex: 1 1 auto;
+  height: 70rpx;
+  padding-left: 30rpx;
+  border: 1px solid rgb(3, 3, 3);
+  flex-direction: row;
+}
+
+.searchImg {
+  width: 70rpx;
+  height: 70rpx; 
+}

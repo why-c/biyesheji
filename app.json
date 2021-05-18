@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/shujuku/shujuku",
+    "pages/index/index",
+    "pages/newgood/newgood",
+    "pages/fabu/fabu",
+    "pages/home/home",
+    "pages/me/me",
+    "pages/huishou/huishou",
+    "pages/Mall/Mall",
+    "pages/Phone/Phone",
+    "pages/New/New",
+    "pages/detail/detail",
+    "pages/pay/pay",
+    "pages/address/address",
+    "pages/dingDan/dingDan",
+    "pages/seller/seller",
+    "pages/myComment/myComment",
+    "pages/Gujia/Gujia"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "基于微信小程序的二手生活物品交易平台",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#Fc0",
+    "selectedColor": "#f4c903",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "image/tab1-ok.png",
+        "iconPath": "image/tab1.png",
+        "pagePath": "pages/shujuku/shujuku",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "image/tab2-ok.png",
+        "iconPath": "image/tab2.png",
+        "pagePath": "pages/fabu/fabu",
+        "text": "发布"
+      },
+      {
+        "selectedIconPath": "image/tab3-ok.png",
+        "iconPath": "image/tab3.png",
+        "pagePath": "pages/me/me",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

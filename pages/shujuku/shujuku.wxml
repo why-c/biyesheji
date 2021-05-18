@@ -1,0 +1,55 @@
+<!--pages/shujuku/shujuku.wxml-->
+<!-- 顶部轮播图 -->
+<view>
+	<swiper indicator-dots="{{true}}" indicator-color="#f4c903" autoplay="true" circular="true">
+		<block wx:for="{{banner}}" wx:key="banner">
+			<swiper-item >
+				<image src='{{item.picUrl}}' mode="widthFix" style="width:100%;height:100%;" />
+			</swiper-item>
+		</block>
+	</swiper>
+</view>
+<!-- 搜索框 -->
+<!-- 每次输入触发bindinput -->
+<view class="searchRoot">
+	<input class="searchInput" bindconfirm='goSearch' confirm-type='search' bindinput="getSearchKey" placeholder="搜索商品" />
+	<image class="searchImg" bindtap="goSearch" src="/image/OIP.jpg"></image>
+</view>
+<!-- 四个图标 -->
+<view class="category_panel1">
+	<view class="category-panel2">
+		<view bindtap='goToMall' class="category-item">
+			<image class="category-item-image" src="/image/mall.png" />
+			<text class="category-item-text">二手商城</text>
+		</view>
+		<view bindtap='goToNew' class="category-item">
+			<image class="category-item-image" src="/image/news.png" />
+			<text class="category-item-text">新品推荐</text>
+		</view>
+		<view bindtap='goToGujia' class="category-item">
+			<image class="category-item-image" src="/image/shangmen.png" />
+			<text class="category-item-text">估价回收</text>
+		</view>
+		<view bindtap='goHuiShou' class="category-item">
+			<image class="category-item-image" src="/image/kf.png" />
+			<text class="category-item-text">回收商家</text>
+		</view>
+	</view>
+</view>
+<!-- 推荐商品 -->
+<view wx:if="{{goodList&&goodList.length>0}}">
+	<view >猜你喜欢</view>
+	<block wx:for="{{goodList}}" wx:key="index">
+		<!-- 利用data-id传回数据给js data-xx为自定义数据节点-->
+		<view class="good_item" data-id="{{item._id}}" bindtap="goDetail">
+			<image class="cai_img" src="{{item.img[0]}}" />
+			<view class="cai_root2">
+				<view class="cai_title" data-index="{{index}}">{{item.name}}</view>
+				<view class="cai_sell">剩余：{{item.num}} </view>
+				<view class="price-stepper">
+					<view class="cai_price" data-index="{{index}}">{{item.price}}</view>
+				</view>
+			</view>
+		</view>
+	</block>
+</view>
